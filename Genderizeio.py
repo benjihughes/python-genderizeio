@@ -105,28 +105,3 @@ class Genderizeio(object):
 
         # Return 0 if the time remaining is a negative value
         return int(calculated_time_remaining) if int(calculated_time_remaining) > 0 else 0
-
-
-if __name__ == "__main__":
-
-    gen = Genderizeio()  # Create object
-
-    results = gen.genderize(['Emily', 'Jack'])  # Genderize name(s) (String or List)
-
-    for res in results:
-        print '{prob}% probability that {name} is a {gender} name.'.format(
-            name=res['name'],
-            gender=res['gender'],
-            prob=int(res['probability']*100)
-        )
-
-    print
-
-    print "{remain}/{limit} requests remaining".format(
-        remain=gen.rate_limit_remaining,
-        limit=gen.rate_limit
-    )
-
-    print "{window} seconds until rate limit window resets".format(
-        window=gen.time_until_reset
-    )
