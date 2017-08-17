@@ -39,7 +39,7 @@ print gen.time_until_reset
 time.sleep(30)  # Doesn't require another request to update
 
 print gen.time_until_reset  
->>> 560
+>>> 570
 
 ```
 
