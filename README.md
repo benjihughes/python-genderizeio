@@ -6,7 +6,7 @@ Written to help manage rate-limiting, keep track of time window resets, and acco
 
 ### Requirements
     
-Requires the requests library for HTTP requests to the API
+Requires the requests library for HTTP requests to the API.
 	
     pip install requests
 	
@@ -21,6 +21,8 @@ Create a `Genderizeio` object then make use of the `genderize` function which re
 The `Genderizeio` object provides properties that are updated after each request to allow rate limiting to be monitored.
 
 ```python
+from Genderizeio import Genderizeio
+
 gen = Genderizeio()
 gen.genderize(['Emily']) 
 
