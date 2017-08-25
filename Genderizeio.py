@@ -9,6 +9,9 @@ class Genderizeio(object):
     """
     A simple python wrapper for the Genderize.io API.
     Written to manage rate limiting and keep track of time window resets.
+
+    Though this class supports the use of a proxy - please adhere to the rate limits set by Genderize.io
+    and consider supporting the developers at https://store.genderize.io/ if you have need for exceeding them.
     """
 
     API_URL = "https://api.genderize.io/"
