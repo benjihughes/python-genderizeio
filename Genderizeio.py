@@ -53,10 +53,10 @@ class Genderizeio(object):
             Dictionary or list of dictionaries if multiple names queried
         """
 
-        if len(names) > 10:
-            raise Exception('Genderize API has a 10 name limit for batch requests.')
-
         query_names = [names] if isinstance(names, str) else names  # Convert single string input to list
+        
+        if len(query_names) > 10:
+            raise Exception('Genderize API has a 10 name limit for batch requests.')
 
         query_params = {'name[]': [name for name in query_names]}  # Create our GET query parameters
 
