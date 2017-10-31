@@ -4,7 +4,9 @@ Simple Python wrapper for the [Genderize.io API](https://genderize.io).
 
 Written to help manage rate-limiting, keep track of time window resets, and accommodate proxy use.
 
-There's more about this written over at [my blog](https://benjihughes.co.uk/blog/determine-the-gender-of-a-first-name-using-python/).
+There's more about this written over at my blog:
+
+[Determine the gender of a first name using Python](https://benjihughes.co.uk/blog/determine-the-gender-of-a-first-name-using-python/).
 
 ### Requirements
     
